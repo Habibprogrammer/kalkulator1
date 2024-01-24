@@ -1,0 +1,31 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Kalkulator</title> </head> <body> <h1>Kalkulator</h1> <input type="number" id="angka1" placeholder="Masukkan angka 1"> <input type="number" id="angka2" placeholder="Masukkan angka 2"> <button onclick="tambah()">+</button> <button onclick="kurang()">-</button> <button onclick="kali()">x</button> <button onclick="bagi()">/</button> <h2 id="hasil"></h2>
+<script>
+    function tambah() {
+        var a = parseInt(document.getElementById("angka1").value);
+        var b = parseInt(document.getElementById("angka2").value);
+        var hasil = a + b;
+        document.getElementById("hasil").innerHTML = hasil;
+    }
+
+    function kurang() {
+        var a = parseInt(document.getElementById("angka1").value);
+        var b = parseInt(document.getElementById("angka2").value);
+        var hasil = a - b;
+        document.getElementById("hasil").innerHTML = hasil;
+    }
+
+    function kali() {
+        var a = parseInt(document.getElementById("angka1").value);
+        var b = parseInt(document.getElementById("angka2").value);
+        var hasil = a * b;
+        document.getElementById("hasil").innerHTML = hasil;
+    }
+
+    function bagi() {
+        var a = parseInt(document.getElementById("angka1").value);
+        var b = parseInt(document.getElementById("angka2").value);
+        var hasil = a / b;
+        document.getElementById("hasil").innerHTML = hasil;
+    }
+</script>
+</body> </html>
